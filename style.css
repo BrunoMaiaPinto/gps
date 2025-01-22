@@ -1,5 +1,9 @@
+* {
+  background-color: aliceblue;
+}
+
 h1 {
-  color: brown;
+  color: red;
 }
 
 .gps:link,
@@ -9,7 +13,12 @@ h1 {
 }
 
 .gps:hover,
-gps:active {
+.gps:active {
   color: blue;
   transition: all 0.5s;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 200px;
 }
