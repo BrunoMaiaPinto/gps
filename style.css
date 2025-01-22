@@ -1,0 +1,15 @@
+h1 {
+  color: brown;
+}
+
+.gps:link,
+.gps:visited {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.gps:hover,
+gps:active {
+  color: blue;
+  transition: all 0.5s;
+}
