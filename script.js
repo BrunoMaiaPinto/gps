@@ -6,7 +6,9 @@ async function getCodigoPostal(cp) {
   const data = await res.json();
   console.log(data);
   if (data.length === 0) {
-    document.querySelector(".localizacao").innerHTML = "Código Postal Inválido";
+    document.querySelector(
+      ".localizacao"
+    ).innerHTML = `<p>Código Postal Inválido</p>`;
     return;
   } else {
     data.map(
