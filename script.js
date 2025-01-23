@@ -11,14 +11,10 @@ async function getCodigoPostal(cp) {
   } else {
     data.map(
       ({ morada, freguesia, concelho, distrito, latitude, longitude }) => {
-        console.log(morada, freguesia, concelho, distrito, latitude, longitude);
+        const link = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
         document.querySelector(
           ".localizacao"
-        ).innerHTML += `<p>${morada}, ${freguesia}, ${concelho}, ${distrito}</p>`;
-
-        const link = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
-        document.querySelector(".gps").setAttribute("href", link);
-        document.querySelector(".gps").innerHTML = "Google Maps";
+        ).innerHTML += `<p>${morada}, ${freguesia}, ${concelho}, ${distrito}. <a class='gps' href=${link} target="_blank">Google Maps</a></p>`;
       }
     );
     return data;
