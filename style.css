@@ -1,24 +1,57 @@
 * {
-  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding-left: 32px;
 }
 
 h1 {
-  color: red;
+  color: #df0024;
+}
+
+.input {
+  border-radius: 100px;
+  height: 18px;
+  padding-left: 8px;
+}
+
+.btn {
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.localizacao {
+  font-size: 18px;
 }
 
 .gps:link,
 .gps:visited {
+  color: #df0024;
+  font-weight: 600;
   text-decoration: none;
   font-size: 18px;
 }
 
 .gps:hover,
 .gps:active {
-  color: blue;
+  color: #000000;
   transition: all 0.5s;
 }
 
 .copy {
   text-align: center;
   margin-top: 200px;
+}
+
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer a:hover,
+footer a:active {
+  color: #df0024;
+  transition: all 0.5s;
 }

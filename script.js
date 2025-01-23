@@ -4,7 +4,7 @@ const btn = document.querySelector(".btn");
 async function getCodigoPostal(cp) {
   const res = await fetch(`https://www.cttcodigopostal.pt/api/v1/${KEY}/${cp}`);
   const data = await res.json();
-  // console.log(data);
+  console.log(data);
   data.map(({ morada, freguesia, concelho, distrito, latitude, longitude }) => {
     document.querySelector(
       ".localizacao"
