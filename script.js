@@ -23,9 +23,10 @@ async function getCodigoPostal(cp) {
   }
 }
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
   document.querySelector(".localizacao").innerHTML = "";
-  getCodigoPostal(document.getElementById("input").value);
+  getCodigoPostal(document.querySelector(".input").value);
 });
 
-document.getElementById("year").innerHTML = `${new Date().getFullYear()}`;
+document.querySelector(".year").innerHTML = `${new Date().getFullYear()}`;

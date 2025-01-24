@@ -9,21 +9,21 @@
   </head>
   <body>
     <h1>Pesquisa por Código Postal</h1>
-    <!-- <form class="form" action="."> -->
-    <label for="codigo-postal">Código Postal: </label>
-    <input
-      type="text"
-      class="input"
-      id="input"
-      placeholder="0000-000"
-      required
-    />
-    <button class="btn">🔍</button>
-    <!-- </form> -->
+    <form class="form" action="#">
+      <label for="codigo-postal">Código Postal: </label>
+      <input
+        type="text"
+        class="input"
+        maxlength="8"
+        placeholder="0000-000"
+        required
+      />
+      <button class="btn">🔍</button>
+    </form>
     <div class="localizacao"></div>
 
     <footer class="copy">
-      Copyright &copy; <span id="year"></span> by
+      Copyright &copy; <span class="year"></span> by
       <a
         href="https://brunopinto.netlify.app/"
         target="_blank"
