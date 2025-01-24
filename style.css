@@ -25,6 +25,12 @@ h1 {
   font-size: 18px;
 }
 
+.erro {
+  color: #df0024;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .gps:link,
 .gps:visited {
   color: #df0024;

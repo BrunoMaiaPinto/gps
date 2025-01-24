@@ -12,7 +12,7 @@ async function getCodigoPostal(cp) {
     if (data.length === 0) {
       document.querySelector(
         ".localizacao"
-      ).innerHTML = `<p>Código Postal Inválido</p>`;
+      ).innerHTML = `<p class='erro'>Código Postal Inválido</p>`;
       return;
     } else {
       data.map(
@@ -27,7 +27,7 @@ async function getCodigoPostal(cp) {
   } catch (error) {
     document.querySelector(
       ".localizacao"
-    ).innerHTML = `<p>Formato Inválido</p>`;
+    ).innerHTML = `<p class='erro'>Formato Inválido</p>`;
     console.error(error);
   }
 }
