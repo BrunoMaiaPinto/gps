@@ -61,3 +61,20 @@ footer a:active {
   color: #df0024;
   transition: all 0.5s;
 }
+
+#map {
+  height: 600px;
+  width: 60%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  height: 62vh;
+}
+
+.container {
+  height: 80%;
+  width: 40%;
+}
