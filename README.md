@@ -9,11 +9,8 @@ This web application allows users to search for a location based on a postal cod
 - Visualizes the location on a map with Leaflet.js.
 
 ## Tech Stack
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+- HTML
+- CSS
+- JavaScript
 - Leaflet.js for map rendering
 - Fetch API for asynchronous requests
-
-## Live Demo
-You can view a live demo of the app here: [(https://gps-bmmp.netlify.app/)](#).
