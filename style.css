@@ -74,8 +74,8 @@ footer a:active {
 }
 
 #map {
-  height: 600px;
-  width: 60%;
+  /* height: 500px; */
+  width: 80%;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -94,7 +94,7 @@ section {
 }
 
 .container {
-  height: 80%;
+  /* height: 8050; */
   width: 40%;
   padding: 16px;
   border-radius: 12px;
