@@ -8,18 +8,25 @@ body {
 
 h1 {
   color: #df0024;
-  text-align: center;
 }
 
 .input {
   border-radius: 100px;
+  border: 1px solid black;
   height: 18px;
   padding-left: 8px;
 }
 
 .btn {
   border-radius: 100px;
+  border: 1px solid black;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #df0024;
+  color: #ffffff;
+  transition: all 0.5s;
 }
 
 .localizacao {
@@ -80,6 +87,10 @@ section {
 .container {
   height: 80%;
   width: 40%;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-right: 18px;
 }
 
 hr {
@@ -90,4 +101,8 @@ hr {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+label {
+  font-weight: 600;
 }
