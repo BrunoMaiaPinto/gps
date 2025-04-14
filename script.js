@@ -49,11 +49,22 @@ async function getCodigoPostal(cp) {
   }
 }
 
-btn.addEventListener("click", (e) => {
+const input = document.querySelector(".input");
+
+btn.addEventListener("click", async (e) => {
   e.preventDefault();
-  // document.querySelector(".form").reportValidity();
+
   document.querySelector(".localizacao").innerHTML = "";
-  getCodigoPostal(document.querySelector(".input").value);
+  await getCodigoPostal(input.value);
+});
+
+input.addEventListener("input", (e) => {
+  const value = e.target.value.replace(/\D/g, "");
+  if (value.length > 4) {
+    e.target.value = `${value.slice(0, 4)}-${value.slice(4)}`;
+  } else {
+    e.target.value = value;
+  }
 });
 
 document.querySelector(".year").innerHTML = `${new Date().getFullYear()}`;
