@@ -78,6 +78,10 @@ footer a:active {
   width: 80%;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 950px) {
+    height: 500px;
+  }
 }
 
 section {
@@ -90,6 +94,8 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    gap: 46px;
+    height: 100%;
   }
 }
 
