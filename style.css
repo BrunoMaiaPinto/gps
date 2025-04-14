@@ -106,6 +106,10 @@ section {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-right: 18px;
+
+  @media screen and (max-width: 950px) {
+    width: 80%;
+  }
 }
 
 hr {
