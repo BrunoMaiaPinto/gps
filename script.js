@@ -1,5 +1,5 @@
 const KEY = "379fab09c36a4bbd88652d784b68d450";
-const btn = document.querySelector(".btn");
+const btn = document.querySelector(".search-button");
 
 async function getCodigoPostal(cp) {
   try {
@@ -49,7 +49,7 @@ async function getCodigoPostal(cp) {
   }
 }
 
-const input = document.querySelector(".input");
+const input = document.querySelector(".search-input");
 
 btn.addEventListener("click", async (e) => {
   e.preventDefault();
