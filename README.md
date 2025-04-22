@@ -14,3 +14,5 @@ This web application allows users to search for a location based on a postal cod
 - JavaScript
 - Leaflet.js for map rendering
 - Fetch API for asynchronous requests
+
+![Captura de ecrã 2025-04-14 213806](https://github.com/user-attachments/assets/0e0a082a-ec5b-4153-a95e-4d5cb021afdf)
