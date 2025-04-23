@@ -169,7 +169,7 @@ label {
 }
 
 .search-button {
-  background-color: #df0024; /* Tailwind's blue-500 */
+  background-color: #df0024;
   padding: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -177,9 +177,9 @@ label {
   font-weight: 600;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 .search-button:hover {
-  background-color: #df0024; /* Tailwind's blue-800 */
+  background-color: #fc062e;
 }
